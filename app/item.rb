@@ -5,4 +5,11 @@ class Item
     @name = name
     @price = price
   end
+
+  if req.path=="/items/self.name"
+      resp.write "You requested the songs"
+    else
+      resp.write "Route not found"
+      resp.status = 404
+    end
 end
