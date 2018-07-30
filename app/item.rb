@@ -7,7 +7,7 @@ class Item
   end
 
   if req.path=="/items/self.name"
-      resp.write "You requested the songs"
+      resp.write "#{self.price}"
     else
       resp.write "Route not found"
       resp.status = 404
